@@ -2,7 +2,7 @@
 /****************/
 /* Flaticon CDN */
 /****************/
-@import url('https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css');
+@import url('https://cdn-uicons.flaticon.com/"Font Awesome 5 Free"/css/"Font Awesome 5 Free".css');
 @import url('https://cdn-uicons.flaticon.com/uicons-solid-rounded/css/uicons-solid-rounded.css');
 
 * {
@@ -16,16 +16,39 @@ body {
   font-family: "Nunito", sans-serif;
 }
 h1 {
-  color: rgba(90, 80, 89, 1) ;
+  color: rgb(1, 74, 66) ;
+  font-family: "Marker Felt, fantasy";
 }
+
+h2 {
+  color: rgba(90, 80, 89, 1) ;
+  font-family: "Marker Felt, fantasy";
+}
+
+h3 {
+  color: rgba(90, 80, 89, 1) ;
+  font-family: "Marker Felt, fantasy";
+}
+
+h4 {
+  color: rgba(90, 80, 89, 1) ;
+  font-family: "Marker Felt, fantasy";
+}
+
+h5 {
+  color: rgba(90, 80, 89, 1) ;
+  font-family: "Marker Felt, fantasy";
+}
+
 p {
-  color: rgba(185, 201, 247, 1) !important;
+  color: rgba(0, 35, 34, 0.7) !important;
+  font-family: "Marker Felt, fantasy";
 }
 
 nav {
   width: 100%;
   height: 200px;
-  background: linear-gradient(90deg, rgba(244, 89, 112, .7), rgba(244, 91, 167, .7)), url(assets/img/navbar-img.jpg);
+  background: linear-gradient(90deg, rgba(89, 244, 241, 0.7), rgba(89, 244, 241, 0.7)), url(assets/img/navbar-img1.jpg);
   background-attachment: fixed;
   background-position: center;
 }
@@ -34,8 +57,8 @@ form input {
   height: 19px !important;
   padding: 10px !important;
   outline: none;
-  border: 1px solid rgba(244, 89, 112, .7);
-  color: rgba(244, 89, 112, .7);
+  border: 1px solid rgba(0, 35, 34, 0.7);
+  color: rgba(89, 244, 241, 0.7);
   font-family: "Nunito" sans-serif;
   border-radius: 5px 0 0 5px;
 }
@@ -44,10 +67,11 @@ form button {
   border: none;
   outline: none;
   color: #fff;
-  background: rgba(244, 89, 112, .7);
+  background: rgba(0, 35, 34, 0.7);
   padding: 12px !important;
   border-radius: 0 5px 5px 0;
   height: 41px !important;
+  font-family: "Marker Felt, fantasy";
 }
 .mt-2 {
   margin-top: 10px !important;
@@ -57,6 +81,7 @@ form button {
   border-radius: 10px;
   box-shadow: 0 5px 10px rgba(154, 160, 185, .05), 0 15px 40px rgba(166, 173, 201, .2);
   padding: 25px;
+  
 }
 .content {
   width: 100%;
@@ -74,6 +99,7 @@ form button {
 }
 .user-information {
   position: relative;
+  
 }
 .user-information .user-img img{
   width: 80px !important;
@@ -87,11 +113,13 @@ form button {
 }
 .user-information .user-name {
   padding-top: 25px;
-  color: rgba(244, 89, 112, .7);
+  color: rgba(0, 82, 81, 0.7);
+  font-family: "Courier New, monospace";
 }
 .user-information .user-bio {
   color: rgba(185, 201, 247, 1);
   font-size: 12px;
+  font-family: "Courier New, monospace";
 }
 .user-information ul {
   display: flex;
@@ -108,7 +136,7 @@ form button {
   text-transform: uppercase;
 }
 .user-information ul li h4 {
-  color: rgba(244, 89, 112, .7);
+  color: rgba(89, 244, 241, 0.7);
   font-size: 25px;
 }
 
@@ -116,6 +144,7 @@ form button {
   display: flex;
   box-sizing: border-box !important;
   justify-content: space-between;
+  
 }
 
 .unread, .read {
@@ -170,6 +199,7 @@ form button {
   display: flex;
   margin-top: 10px;
   box-sizing: border-box !important;
+  
 }
 .icons > .my-icon {
   box-sizing: border-box !important;
@@ -178,6 +208,7 @@ form button {
   margin: 5px;
   padding: 5px;
   width: calc(99% / 3) !important;
+  
 }
 .add-book, .read-icon, .unread-icon {
   display: inline-flex;
@@ -187,14 +218,14 @@ form button {
   height: 4rem;
   font-size: 20px;
   margin-bottom: 1rem;
-  color: aliceblue;
+  color: LavenderBlush;
   border-radius: 50%;
   transition-property: color;
   transition: .5s ease-out;
-  background: linear-gradient(90deg, rgba(244, 89, 112, .7), rgba(244, 91, 167));
+  background: linear-gradient(90deg, rgba(112,128,144), rgba(244, 91, 167));
 }
 .read-icon {
-  background: linear-gradient(90deg, rgba(31, 213, 162, 1), rgba(48, 213, 260, 1));
+  background: linear-gradient(90deg, rgba(75,0,130), rgba(48, 213, 260, 1));
   transition: .5s ease;
   opacity: .7;
 }
@@ -205,7 +236,7 @@ form button {
   transform: rotate(360deg);
 }
 .unread-icon {
-  background: linear-gradient(90deg, rgba(255, 173, 26), rgba(253, 132, 69));
+  background: linear-gradient(90deg, rgba(128,0,0), rgba(253, 132, 69));
   opacity: .7;
 }
 #modal {
@@ -234,12 +265,13 @@ form button {
   border-radius: 10px !important;
   margin: 12px 0 !important;
   background: transparent !important;
+  font-family: "Marker Felt, fantasy";
 }
 #form .close {
   border: none;
   outline: none;
   color: #fff;
-  background: rgba(244, 89, 112, .7);
+  background: rgba(89, 244, 241, 0.7);
   padding: 12px !important;
   border-radius: 5px 0 0 5px;
   height: 41px !important;
@@ -247,10 +279,10 @@ form button {
 }
 
 .read-button {
-  font-family: uicons-regular-rounded !important;
-  content: '\f10b' !important;
+  font-family: "Font Awesome 5 Free" !important;
+  content: '\f35a' !important;
   padding: 10px;
-  background: linear-gradient(170deg, rgba(31, 213, 162, 1), rgba(48, 213, 260, 1));
+  background: linear-gradient(170deg, rgba(205,92,92), rgba(245,222,179));
   border-radius: 50%;
   border: none;
   outline: none;
@@ -263,15 +295,15 @@ form button {
   opacity: .9;
 }
 .read-button:before {
-    content: '\f12f';
+    content: '\f35a';
 }
 
 
 .unread-button {
-  font-family: uicons-regular-rounded !important;
-  content: '\f131' !important;
+  font-family: "Font Awesome 5 Free" !important;
+  content: '\f359' !important;
   padding: 10px;
-  background: linear-gradient(170deg, rgba(255, 173, 26), rgba(253, 132, 69));
+  background: linear-gradient(170deg, rgba(205,92,92), rgba(245,222,179));
   border-radius: 50%;
   transition-property: color;
   transition: .5s ease-out;
@@ -285,17 +317,17 @@ form button {
   
 }
 .unread-button:before {
-    content: '\f131';
+    content: '\f359';
 }
 
 
 .trash-book {
-  font-family: uicons-regular-rounded !important;
-  content: '\f24a' !important;
+  font-family: "Font Awesome 5 Free" !important;
+  content: '\f2ed' !important;
   padding: 10px;
   transition-property: color;
   transition: .5s ease-out;
-  background: linear-gradient(170deg, #f97794, #623AA2);
+  background: linear-gradient(170deg, #B0C4DE, #778899);
   border-radius: 50%;
   border: none;
   outline: none;
@@ -306,7 +338,7 @@ form button {
   opacity: .9;
 }
 .trash-book:before {
-    content: '\f24a';
+    content: '\f2ed';
 }
 .read-button:hover,
 .unread-button:hover,
@@ -342,4 +374,48 @@ form button {
     width: 100% !important;
   }
 
+}
+
+.search_section {
+    margin: 16px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 16px;
+    border: 1px solid rgba(0, 62, 61, 0.7);
+    border-radius: 10px;
+    
+}
+
+.search_section > h2 {
+    color: rgba(89, 244, 241, 0.7);
+}
+
+.search_section > form {
+    padding: 16px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto 1fr 0.5fr;
+    grid-gap: 10px;
+}
+
+.search_section > form > label {
+    display: flex;
+    align-items: center;
+    font-family: "fantasy";
+    font-size: large;
+}
+
+.search_section > form > input {
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.search_section > form > button {
+    background-color: rgba(244, 89, 89, 0.7);
+    color: white;
+    border: 0;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: "fantasy";
 }

@@ -9,6 +9,8 @@
   <title>Bookself Apps</title>
   
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.css">
+</link>
 </head>
 
 <body>
@@ -18,7 +20,7 @@
     <div class="col-1">
       <div class="user-information my-container">
         <div class="user-img">
-          <img src="assets/img/avatar.jpg" alt="Avatar" />
+          <img src="assets/img/avatar1.png" alt="Avatar" />
         </div>
         <h1 class="user-name">Muhammad Ilman</h1>
         <p class="user-bio"><i class="fi-sr-broom"></i> Programmer dan Content Creator </p>
@@ -35,27 +37,7 @@
           <button class="submit" type="submit"><i class="fi-rr-search"></i></button>
         </form>
       </div> -->
-      <div class="my-container icons">
-        <div class="my-icon">
-          <div class="read-icon">
-            <i class="fi-rr-book-alt"></i>
-          </div>
-
-          <h5>Dibaca</h5>
-        </div>
-        <div class="my-icon">
-          <div class="unread-icon">
-             <i class="fi-rr-bookmark"></i>
-          </div>
-          <h5>Belum Dibaca</h5>
-        </div>
-        <div class="my-icon">
-           <div class="add-book" id="add-book">
-            <i class="fi-sr-add"></i>
-          </div>
-          <h5>add</h5>
-        </div>
-      </div>
+      
     </div>
     <div class="col-2">
       <div class="my-container welcome">
@@ -63,7 +45,9 @@
         <p>Kelola Buku jadi lebih mudah hanya di Bookself Apps, Coba Sekarang !</p>
       </div>
       
-      
+       
+    
+     
       <div class="content-book">
         <div class="unread" id="unread">
           <h4 class="">Belum Dibaca</h4>
@@ -74,12 +58,46 @@
         </div>
       </div>
     </div>
+
+    <div class="col-3">
+      <div class="my-container icons">
+        <div class="my-icon">
+          <div class="read-icon">
+            <i class="fa-solid fa-book-open"></i>
+          </div>
+
+          <h5>Dibaca</h5>
+        </div>
+        <div class="my-icon">
+          <div class="unread-icon">
+             <i class="fa-solid fa-book"></i>
+          </div>
+          <h5>Belum Dibaca</h5>
+        </div>
+        <div class="my-icon">
+           <div class="add-book" id="add-book">
+            <i class="fa-solid fa-plus"></i>
+          </div>
+          <h5>Add</h5>
+        </div>
+      </div>
+
+      <section class="search_section">
+        
+        <form id="search-books" >
+            <label for="searchBookTitle">Judul</label>
+            <input id="searchBookTitle" type="text" data-search>
+            <button id="searchSubmit" type="submit" >Cari</button>
+        </form>
+    </section>
+    </div>
   </div>
 
     <div id="modal">
         <section class="my-container">
             <h2>New Book</h2>
             <form id="form">
+              <tbody>
                 <div class="input-group">
                     <input type="text" id="title" placeholder="Judul Buku" class="input-form"
                         maxlength="120" pattern="^[a-zA-Z0-9_ ]*$" required />
@@ -96,6 +114,8 @@
                     <button type="reset" class="close" id="close">Close</button>
                     <button type="submit" id="save">Save</button>
                 </div>
+              </tbody>
+                
             </form>
         </section>
     </div>
@@ -104,5 +124,6 @@
 
   <script src="./storage.js"></script>
   <script src="./main.js"></script>
+  <script src="https://kit.fontawesome.com/af7d6416b9.js" crossorigin="anonymous"></script>
 </body>
 </html>

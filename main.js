@@ -24,9 +24,9 @@ const addBook = () => {
 const makeBook = (title, author, year, isCompleted) => {
   const image = document.createElement('img');
   if(isCompleted) {
-    image.setAttribute('src', 'assets/img/read.jpg')
+    image.setAttribute('src', 'assets/img/read1.png')
   } else {
-    image.setAttribute('src', 'assets/img/unread.jpg')
+    image.setAttribute('src', 'assets/img/unread1.jpeg')
   }
 
   const imageBook = document.createElement('div');
@@ -165,4 +165,24 @@ document.addEventListener("ondatasaved", () => {
 document.addEventListener("ondataloaded", () => {
   refreshDataFromBooks();
   booksLength();
+});
+
+// document.addEventListener("DOMContentLoaded", function () {
+//   const submitForm = document.getElementById("form");
+
+//   submitForm.addEventListener("submit", function (event) {
+//     event.preventDefault();
+//     addBook();
+//   });
+// });
+
+const searchInput = document.querySelector("[data-search]");
+
+
+searchInput.addEventListener("submit", (e) => {
+  const value = e.target.value.toLowerCase();
+  books.forEach((book) => {
+    const isVisible = book.title.toLowerCase().includes(value); ;
+    book.element.classList.toggle("hide", !isVisible);
+  });
 });
